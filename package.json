@@ -1,0 +1,35 @@
+{
+	"name": "ncm2audio",
+	"version": "1.0.0",
+	"description": "把网易云音乐客户端下载的 .ncm 文件解密导出为 mp3 / flac 的命令行工具",
+	"type": "module",
+	"bin": {
+		"ncm2audio": "bin/ncm2audio.mjs"
+	},
+	"exports": {
+		".": "./src/decrypt.mjs",
+		"./cli": "./src/cli.mjs"
+	},
+	"files": [
+		"bin",
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"test": "node --test test/"
+	},
+	"keywords": [
+		"ncm",
+		"netease",
+		"ncmdump",
+		"music",
+		"decrypt",
+		"cli"
+	],
+	"author": "yushuai",
+	"license": "MIT"
+}
